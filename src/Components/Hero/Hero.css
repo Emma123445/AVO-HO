@@ -1,0 +1,114 @@
+.hero{
+    height: 85vh;
+    background: linear-gradient(180deg, #fde1ff, #e1ffea22 60%);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: -20vh;
+}
+.hero-left{
+    flex-direction: column;
+    display: flex;
+    flex: 1;
+    gap: 20px;
+    padding-left: 180px;
+    line-height: 1.1;
+
+}
+.hero-left h2{
+    color: #090909;
+    font-size: 26px;
+    font-weight: 600;
+}
+.hero-left p{
+    color: #171717;
+    font-size: 50px;
+    font-weight: 400;
+}
+.hero-left p span{
+    color: white;
+    font-size: 50px;
+    font-weight: 400;
+}
+.hand-hand-icon{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+}
+.hand-hand-icon img{
+    width: 105px;
+
+}
+.hero-latest-btn{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px; 
+}
+.hero-latest-btn .Generate{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 280px;
+    height: 70px;
+    border-radius: 75px;
+    background-color: #ee7373;
+    color: white;
+    font-size: 22px;
+    font-weight: 500;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border: 1px solid #ff4141;
+}
+.hero-latest-btn .Generate:hover{
+    background-color: white;
+    color: #ff4141;
+    border: 1px solid #ff4141;
+}
+.hero-latest-btn .Generate:active{
+    background-color: #ff4141;
+    color: white;
+    border: 1px solid #ff4141;
+}
+
+.hero-latest-btn .test{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 280px;
+    height: 70px;
+    border-radius: 75px;
+    background-color: #ff4141;
+    color: white;
+    font-size: 22px;
+    font-weight: 500;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border: 1px solid #ff4141;
+}
+.hero-latest-btn .test:hover{
+    background-color: white;
+    color: #ff4141;
+    border: 1px solid #ff4141;
+}
+.hero-latest-btn .test:active{
+    background-color: #ff4141;
+    color: white;
+    border: 1px solid #ff4141;
+}
+
+.hero-right{
+    flex:1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 100px;
+    position: relative;
+    width: 100px;
+    height: 100vh;
+}

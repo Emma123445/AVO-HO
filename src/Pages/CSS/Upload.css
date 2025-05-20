@@ -1,0 +1,115 @@
+.upload-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 20px;
+  min-height: 100vh;
+  color: #c9d1d9;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.chat-box {
+  width: 100%;
+  max-width: 720px;
+  border-radius: 16px;
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.35);
+  padding: 30px;
+}
+
+.chat-header {
+  font-size: 28px;
+  font-weight: 700;
+  color: #58a6ff;
+  margin-bottom: 20px;
+}
+
+.chat-message {
+  margin-bottom: 28px;
+  line-height: 1.6;
+  font-size: 17px;
+}
+
+.chat-message.bot {
+  background-color: #1f2a36;
+  padding: 20px;
+  border-radius: 12px;
+  animation: fadeIn 0.5s ease-out;
+}
+
+.chat-message.bot.result {
+  background-color: #1c1f26;
+  border-left: 4px solid #58a6ff;
+  animation: typeIn 1.2s steps(50, end) forwards;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  padding: 24px;
+  margin-top: 32px;
+  color: #cdd9e5;
+  font-size: 16px;
+}
+
+.chat-message.user {
+  text-align: right;
+  font-style: italic;
+  color: #8b949e;
+  font-size: 14px;
+}
+
+.upload-input {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  margin-top: 30px;
+}
+
+.upload-input input[type='file'] {
+  background-color: #21262d;
+  color: #c9d1d9;
+  border: none;
+  padding: 12px;
+  font-size: 15px;
+  border-radius: 8px;
+  width: 100%;
+  max-width: 100%;
+}
+
+.upload-input button {
+  background-color: #238636;
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.upload-input button:disabled {
+  background-color: #30363d;
+  cursor: not-allowed;
+}
+
+.upload-input button:hover:not(:disabled) {
+  background-color: #2ea043;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes typeIn {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}

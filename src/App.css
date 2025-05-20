@@ -1,0 +1,11 @@
+
+body {
+  margin: 0;
+  padding: 0;
+  color: white;
+  background-image: url('./Components/Assets/bg-site.jpg'); 
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  font-family: 'Arial', sans-serif;
+}
